@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JGG. Contacto</title>
+    <!-- Importar fuentes de googlefonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- ROBOTO -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- DANCING SCRIPT -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet"> 
+    <!-- Iconos de font awesome -->
+    <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous"
+    >
+    <!-- Iconos de bootstrap 5.0 -->
+    <link rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    
+    <!-- Ficheros de estilos -->
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/helpers.css">
+    <link rel="stylesheet" href="styles/contacto.css">
+    <link rel="stylesheet" href="styles/media-queries.css">
+</head>
+<header>
+    <!-- SRCIPT PARA MANTENER MARCADO EL LINK DE LA PÁGINA EN QUE ESTAMOS -->
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById("contacto").style.background = 'lightblue';
+        }
+    </script>
+    <section class="cabecera">
+        <div class="cab-izquierda">
+            <a href="index.html">
+                <img src="images/LogoJGGtr_red.png" alt="Logo" id="logoCabecera">
+                Jordi Garcia Gonzalez
+            </a>
+        </div>
+        <div class="cab-derecha">
+            <nav class="menuLinks">
+                <ul>
+                    <li><a href="index.html" id="index">Inicio</a></li>
+                    <li><a href="sobrejgg.html" id="sobrejgg">Sobre JGG</a></li>
+                    <li><a href="#" id="servicios">Servicios</a>
+                        <ul>
+                            <li><a href="procesos.html">Consultoría Operaciones</a></li>
+                            <li><a href="industria40.html">Consultoría Industria 4.0</a></li>
+                            <li><a href="hseq.html">HSEQ / Sistemas de gestión</a></li>
+                            <li><a href="formacion.html">Formación</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contacto.html" id="contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="cab-derechaTelefono">
+            <button class="dropbtn"><i class="bi bi-three-dots-vertical"></i></button>
+            <div class="dropdown-content">
+                <a href="index.html">Inicio</a>
+                <a href="sobrejgg.html">Sobre JGG</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </div>
+    </section>
+</header>
+<body>
+    <section class="contacto">
+        <div class="slideContacto">
+            <div class="datosContacto">
+                <h1>¿Hablamos?</h1>
+                <p>Si tienes alguna pregunta, comentario, ... envíame un mensaje 
+                    o rellena el formulario y buscamos un momento para comentarlo.</p>
+                <div class="mail-telefono">
+                    <i class="far fa-envelope"></i>
+                    <a href="mailto:jorgargon@outlook.com"> <p>jorgargon@outlook.com</p></a>
+                </div>
+                <div class="mail-telefono">
+                    <i class="fas fa-phone-volume"></i>
+                    <p>+34 676 460 703</p>
+                </div>
+                <div class="vcard">
+                    <p>Lee o pincha en este código QR para acceder a mi tarjeta de visita.</p>
+                    <a href="archivos/Jordi Garcia.vcf" alt="linkTarjetaVisita">
+                        <img src="images/qrvcard.png" alt="qrTarjetaVisita" height="150px" width="150px">
+                    </a>
+                </div>
+            </div>
+            <form action="enviarMail.php" method="post" class="formulario">
+                <div class="elem-group">
+                    <label for="nombre">Nombre<sup>*</sup></label>
+                    <input type="text" id="nombre" name="nombreContacto" 
+                    placeholder="Nombre y Apellido" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Nombre y Apellido'" pattern=[A-Z\sa-z]{3,20} required>
+                </div>
+                <div class="elem-group">
+                    <label for="empresa">Empresa<sup>*</sup></label>
+                    <input type="text" id="empresa" name="empresaContacto" 
+                    placeholder="¿Dónde trabajas?" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = '¿Dónde trabajas?'"required>
+                    </div>
+                <div class="elem-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="text" id="telefono" name="telefonoContacto" 
+                    placeholder="Número de teléfono" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Número de teléfono'">
+                </div>
+                <div class="elem-group">
+                    <label for="email">Correo Electrónico<sup>*</sup></label>
+                    <input type="email" id="email" name="mailContacto" 
+                    placeholder="ejemplo@email.com" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'ejemplo@email.com'"required>
+                </div>
+                <div class="elem-group">
+                    <label for="asunto">Asunto<sup>*</sup></label>
+                    <input type="text" id="asunto" name="asuntoMensaje" required 
+                    placeholder="Motivo del contacto" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Motivo del contacto'"pattern=[A-Za-z0-9\s]{8,60}>
+                </div>
+                <div class="elem-group">
+                    <label for="mensaje">Mensaje*</label>
+                    <textarea id="mensaje" name="mensajeContacto" 
+                    placeholder="Detalles de la consulta" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Detalles de la consulta'"required></textarea>
+                </div>
+                <div class="paqueteBoton">
+                    <button type="submit">Enviar</button>
+                    <p>* Campos obligatorios</p>
+                </div>
+                
+            </form>
+        </div>
+    </section>
+
+    <span class="mencionFoto">Photo by <a href="https://unsplash.com/@markuswinkler?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Markus Winkler</a> on <a href="https://unsplash.com/t/business-work?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+    <!-- BOTON WHATSAPP  -->   
+    <section class="messageButtons">
+        <!-- GetButton.io widget -->
+        <script type="text/javascript">
+            (function () {
+                var options = {
+                    whatsapp: "+34676460703", // WhatsApp number
+                    call_to_action: "Contacta", // Call to action
+                    position: "right", // Position may be 'right' or 'left'
+                };
+                var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+                var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+                s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+                var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+            })();
+        </script>
+        <!-- /GetButton.io widget -->
+    </section>
+    <section class="pie">
+        <div class="social">
+            <a href="https://wa.me/34676460703" target="_blank" alt="whatsapp">
+                <i class="fab fa-whatsapp" style="color:greenyellow"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/jordi-garcia-gonzalez-76086626" target="_blank" alt="linkedin">
+                <i class="fab fa-linkedin-in" style="color:lightblue"></i>
+            </a>
+        </div>
+        <div class="copyright">
+            &copy; 2021 Jordi Garcia Gonzalez 
+        </div>
+    </section>
+</body>
+</html>

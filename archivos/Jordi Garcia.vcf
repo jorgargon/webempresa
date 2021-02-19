@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//iPhone OS 14.4//EN
+N:Garcia;Jordi;;;
+FN:Jordi Garcia
+ORG:JGG;
+EMAIL;type=INTERNET;type=pref:jorgargon@outlook.com
+TEL;type=CELL;type=VOICE;type=pref:+34 676 460 703
+item1.URL;type=pref:www.jorgargon.com
+item1.X-ABLabel:_$!<HomePage>!$_
+END:VCARD

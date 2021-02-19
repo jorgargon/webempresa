@@ -1,0 +1,22 @@
+VERSIÓN BETA - FEBRERO 2021
+    Versión inicial previa a la publicación de la WEB.
+    Páginas
+        Index
+        Sobre JGG
+        Servicios
+            Procesos
+            Industria 4.0
+            HSEQ
+            Formación
+        Contacto
+    
+    Web responsive design
+        4 cortes por media queries
+            menos 600 px
+            entre 600 y 800 px
+            entre 800 y 1000 px
+            a partir de 1000 px
+
+    CAMBIOS / MEJORAS / SOLUCIÓN DE ERRORES PARA LA PRÓXIMA VERSIÓN
+        
+        

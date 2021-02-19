@@ -1,0 +1,754 @@
+@media (min-width: 1000px) {
+    .cab-derechaTelefono { /* Para no mostrar el desplegable en pantalla grande */
+        display: none;
+    }
+   
+}
+/* PANTALLAS ENTRE 800 Y 1000 PX */
+@media (min-width: 800px) and (max-width: 1000px) {
+    /* INICIO MEDIA QUERIE COMMON.CSS */
+        /* INICIO CABECERA */
+            .cabecera {
+                height: 65px;
+            }
+            .cab-izquierda > a{
+                font-size: 1.75em;
+            }
+            .cab-derecha {  /* Ocultar el menu de links en pantalla pequeña */
+                display: none;
+            }
+            #logoCabecera {
+                height: 65px;
+                width: auto;
+            }
+
+        /* FIN CABECERA */
+        
+        /* INICIO GRID IMAGEN - TEXTO */
+            .cuadro > .cuadroTexto {
+                padding: 12px;
+            }
+        
+            .cuadro > .cuadroImagen img {  /* Formato de las imagenes en los cuadros*/
+                height: 300px;
+                
+            }
+            .cuadro > .cuadroTexto {
+                justify-content: center;
+            }
+        
+            .gridImagenTexto > .cuadros > .cuadro > .cuadroTexto p {
+                font-size: 1rem;
+            }
+            .gridImagenTexto > .cuadros > .cuadro > .cuadroTexto h1 {
+                font-size: 1.2rem;
+            }
+
+        /* FIN GRID IMAGEN - TEXTO */
+
+        /* INICIO FOOTER */
+            .pie {
+                height: 70px;
+            }
+
+            .pie > .social {
+                padding-top: 5px;
+            }
+            .pie > .social a {
+                font-size: 1.1rem;
+            }
+
+        /* FIN FOOTER */
+
+        /* INICIO HELPERS */
+            .spacer100 {  
+                height: 50px;
+                width: 100%
+            }
+            .spacer10 {
+                height: 5px;
+            }
+        /* FIN HELPERS */
+    
+    /* FIN MEDIA QUERIE COMMON.CSS */
+    
+    
+    /* INICIO MEDIA QUERIE INDEX.CSS */
+
+        /* INICIO BIENVENIDA */
+            .bienvenida {
+                margin-top: 70px; 
+                height: auto;
+                padding: 10px;
+            }
+            .bienvenida > .problema > p{
+                font-size: 1.3rem;
+                line-height: 2.0rem;
+            }
+            .bienvenida > .spacer100 {
+                height: 10px;
+            }
+            .bienvenida > .comoSolucionarProblema > p{
+                padding: 20px;
+                font-size: 1.3rem;
+                line-height: 2rem;
+            }
+        /* FIN BIENVENIDA */
+
+        /*COMO AFRONTAR EL RETO */
+            
+            .comoAfrontarReto > .gridImagenTexto > .cuadros > .cuadro > .cuadroTexto {
+                width: 93%;
+                height: auto;
+            }
+            .comoAfrontarReto > .gridImagenTexto > .cuadros > .cuadro > .cuadroTexto > h2 {
+                font-size: 1.2rem;
+                margin: 0px 0px 20px 0px;
+            }
+
+            .comoAfrontarReto > .gridImagenTexto > .cuadros > .cuadro > .cuadroTexto > p, li{
+                font-size: 1rem;
+                line-height: 1.8rem;
+            }
+
+            .comoAfrintarReto > #comoAfrintarReto > li {
+                font-size: 1rem;
+            }
+
+            .comoAfrontarReto > .gridImagenTexto > .cuadros > .cuadro > .cuadroImagen img {  /* Formato de las imagenes en los cuadros*/
+                width: 100%;
+                height: 500px;
+                object-fit: cover;
+            }
+        /* FIN COMO AFRONTAR RETO */
+
+        /* SERVICIOS */     
+            .servicios{
+                height: auto; 
+            }
+
+            .servicios > .gruposServicios {
+                background-color: rgba(210, 210, 210, 0.85);
+                height: auto;
+            }
+
+            .gruposServicios>.contenedorColumnas>.columna {
+                padding: 10px 10px 10px 10px;
+                margin: 10px 20px 10px 20px;
+            }
+
+            .servicios> .gruposServicios > .contenedorColumnas {
+                width: auto;
+                grid-template-columns: 1fr 1fr;
+                justify-content: space-between;   
+            }
+
+        /* FIN SERVICIOS */
+
+    /* FIN MEDIA QUERIE INDEX.CSS */  
+    
+    
+    /* INICIO MEDIA QUERIE SOBREJGG.CSS */
+    
+    /* PRESENTACION */
+        .presentacion p {
+            font-size: 1rem;
+        }
+    
+        .presentacion h1 {
+            font-size: 1.2rem;
+        }
+        #logoNombre {
+            font-size: 1rem;
+        }
+    
+    /* PROYECTOS */
+        .proyectos {
+            height: auto;
+        }
+    
+        .proyectos > h1 {   
+            font-size: 1.3rem;
+        }
+    
+        .slide > .empresa {
+            font-size: 1rem;
+        }
+    
+        .slide > .proyecto > ul > li {
+            font-size: 1.1rem;
+            line-height: 1.8rem;
+        }
+    
+    /* FIN MEDIA QUERIE SOBREJGG.CSS */
+    
+    
+    /* INICIO MEDIA QUERIE CONTACTO.CSS */
+        body {
+            height: 100%;
+        }
+        .contacto > .slideContacto {
+            width: 80%;
+            height: auto;
+            position: static;
+            margin-left: 10%;
+        }
+    
+        .contacto > .slideContacto > .datosContacto {
+            margin: 0px 20px 10px 20px;
+        }
+    
+        .contacto > .slideContacto > .datosContacto > .vcard img{
+            padding-left: 18%;
+        }
+    
+        .contacto > .slideContacto > .formulario {
+            margin: 0px 20px 10px 20px;
+        }
+    
+        .contacto > .slideContacto > .formulario input, select, textarea {
+            width: 100%;
+            padding: 8px;
+        }
+    
+        .mencionFoto{
+            font-size: 0.7rem;
+        }
+        
+/* FIN MEDIA QUERIE CONTACTO. CSS */
+
+/* INICIO MEDIA QUERIE MENSAJE.CSS */
+    .mensaje {
+        width: 100%;
+        height: auto;
+    }
+
+    .mensaje > .texto > .ok, .fa-thumbs-up {
+        font-size: 1.7rem;
+    }    
+
+    .mensaje > .texto > .nook, .fa-times-circle {
+        font-size: 1.7rem;
+    }
+
+    .mensaje > .texto > a > .fa-whatsapp-square {
+        font-size: 4.2rem;
+    }
+
+    .spacer100 {  
+        height: 85px;
+        width: 100%
+    }
+/* FIN MEDIA QUERIE MENSAJE.CSS */
+} /* FIN MEDIA QUERIE ENTRE 800 Y 1000PX */
+
+/* PANTALLAS ENTRE 600 Y 800 PX */
+    @media (min-width: 600px) and (max-width: 800px) {
+        /* INICIO MEDIA QUERIE COMMON.CSS */
+            /* INICIO CABECERA */
+                .cabecera {
+                    height: 65px;
+                }
+                .cab-izquierda > a{
+                    font-size: 1.75em;
+                }
+                .cab-derecha {  /* Ocultar el menu de links en pantalla pequeña */
+                    display: none;
+                }
+                #logoCabecera {
+                    height: 65px;
+                    width: auto;
+                }
+            
+            /* FIN CABECERA */
+
+            /* INICIO GRID IMAGEN - TEXTO */
+                           
+                .cuadro > .cuadroTexto {
+                    padding: 8px;
+                }
+
+                .cuadro > .cuadroImagen img {  /* Formato de las imagenes en los cuadros*/
+                    height: 250px;
+                    
+                }
+                .gridImagenTexto > .cuadros > .cuadro > .cuadroTexto p {
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                    margin: 4px;
+                }
+                .gridImagenTexto > .cuadros > .cuadro > .cuadroTexto h1 {
+                    font-size: 1.2rem;
+                }
+
+            /* FIN GRID IMAGEN - TEXTO */
+
+            /* INICIO FOOTER */
+                .pie {
+                    height: 70px;
+                }
+
+                .pie > .social {
+                    padding-top: 5px;
+                }
+                .pie > .social a {
+                    font-size: 1.1rem;
+                }
+
+            /* FIN FOOTER */
+
+            /* INICIO HELPERS */
+                .spacer100 {  
+                    height: 50px;
+                    width: 100%
+                }
+                .spacer10 {
+                    height: 5px;
+                }
+            /* FIN HELPERS */
+
+        /* FIN MEDIA QUERIE COMMON.CSS */
+
+
+        /* INICIO MEDIA QUERIE INDEX.CSS */
+
+            /* INICIO BIENVENIDA */
+                .bienvenida {
+                    margin-top: 65px; 
+                    height: auto;
+                    padding: 10px;
+                }
+                .bienvenida > .problema > p{
+                    width: 60%;
+                    font-size: 1.1rem;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    border-radius: 20px;
+                    line-height: 2.0rem;
+                }
+                .bienvenida > .spacer100 {
+                    height: 10px;
+                }
+                .bienvenida > .comoSolucionarProblema > p{
+                    margin-left: 0px;
+                    padding: 20px;
+                    width: 60%;
+                    margin-left: 30%;
+                    font-size: 1.1rem;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    border-radius: 20px;
+                    line-height: 2rem;
+                }
+            /* FIN BIENVENIDA */
+
+            /*COMO AFRONTAR EL RETO */
+                .comoAfrontarReto > .gridImagenTexto > .cuadros > .cuadro {
+                    grid-template-columns: 1fr; /* Dejo 1 columna */
+                }
+                
+                .comoAfrontarReto > .gridImagenTexto > .cuadros > .cuadro > .cuadroTexto {
+                    width: 93%;
+                    height: auto;
+                }
+                .comoAfrontarReto > .gridImagenTexto > .cuadros > .cuadro > .cuadroTexto > h2 {
+                    font-size: 1.2rem;
+                    margin: 0px 0px 20px 0px;
+                }
+
+                .comoAfrontarReto > .gridImagenTexto > .cuadros > .cuadro > .cuadroTexto > p, li{
+                    font-size: 1rem;
+                    line-height: 1.8rem;
+                }
+
+                .comoAfrintarReto > #comoAfrintarReto > li {
+                    font-size: 1rem;
+                }
+            /* FIN COMO AFRONTAR RETO */
+
+            /* SERVICIOS */     
+                .servicios{
+                    height: auto; 
+                }
+
+                .servicios > .gruposServicios {
+                    background-color: rgba(210, 210, 210, 0.85);
+                    height: auto;
+                }
+
+                .gruposServicios>.contenedorColumnas>.columna {
+                    padding: 10px 10px 10px 10px;
+                    margin: 10px 20px 10px 20px;
+                }
+
+                .servicios> .gruposServicios > .contenedorColumnas {
+                    width: auto;
+                    grid-template-columns: 1fr 1fr;
+                    justify-content: space-between;   
+                }
+
+            /* FIN SERVICIOS */
+
+        /* FIN MEDIA QUERIE INDEX.CSS */                
+
+        /* INICIO MEDIA QUERIE SOBREJGG.CSS */
+
+            /* INICIO PRESENTACION */
+                .presentacion p {
+                    font-size: 1rem;
+                }
+
+                .presentacion h1 {
+                    font-size: 1.2rem;
+                }
+                #logoNombre {
+                    font-size: 1rem;
+                }
+            
+            /* FIN PRESENTACIÓN */
+
+            /* INICIO PROYECTOS */
+                .proyectos {
+                    height: auto;
+                }
+
+                .proyectos > h1 {   
+                    font-size: 1.1rem;
+                }
+
+                .slide > .empresa {
+                    font-size: 0.9rem;
+                }
+
+                .slide > .proyecto > ul > li {
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                }
+
+            /* FIN PROYECTOS */
+
+        /* FIN MEDIA QUERIE SOBREJGG.CSS */
+
+
+        /* INICIO MEDIA QUERIE CONTACTO.CSS */
+            body {
+                height: 100%;
+            }
+            .contacto > .slideContacto {
+                width: 80%;
+                height: auto;
+                position: static;
+                margin-left: 10%;
+                grid-template-columns: 1fr;
+            }
+
+            .contacto > .slideContacto > .datosContacto {
+                margin: 0px 20px 10px 20px;
+            }
+
+            .contacto > .slideContacto > .datosContacto > .mail-telefono {
+                justify-content: center;
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+            .contacto > .slideContacto > .datosContacto > .vcard img{
+                padding-left: 35%;
+                height: 100px;
+                width: auto;
+            }
+
+            .contacto > .slideContacto > .formulario {
+                margin: 0px 20px 10px 20px;
+            }
+
+            .contacto > .slideContacto > .formulario input, select, textarea {
+                width: 100%;
+                padding: 8px;
+            }
+
+            .mencionFoto{
+                font-size: 0.5rem;
+            }
+            
+        /* FIN MEDIA QUERIE CONTACTO. CSS */
+
+        /* INICIO MEDIA QUERIE MENSAJE.CSS */
+            .mensaje {
+                width: 100%;
+                height: auto;
+            }
+
+            .mensaje > .texto > .ok, .fa-thumbs-up {
+                font-size: 1.3rem;
+            }    
+
+            .mensaje > .texto > .nook, .fa-times-circle {
+                font-size: 1.3rem;
+            }
+
+            .mensaje > .texto > a > .fa-whatsapp-square {
+                font-size: 3.5rem;
+            }
+
+            .spacer100 {  
+                height: 70px;
+                width: 100%
+            }
+        /* FIN MEDIA QUERIE MENSAJE.CSS */
+
+    }
+
+/*  FIN MEDIA QUERIE PANTALLAS ENTRE 600 Y 800PX */
+
+/* PANTALLAS MENORES DE 600PX */
+    @media (max-width: 600px) {
+        /* INICIO MEDIA QUERIE COMMON.CSS */
+            /* INICIO CABECERA */
+                .cabecera {
+                    height: 50px;
+                }
+                .cab-izquierda > a{
+                    font-size: 1.2rem;
+                }
+                .cab-derecha {  /* Ocultar el menu de links en pantalla pequeña */
+                    display: none;
+                }
+                #logoCabecera {
+                    height: 50px;
+                    width: auto;
+                }
+            
+            /* FIN CABECERA */
+            
+            /* INICIO GRID IMAGEN - TEXTO */
+
+                .cuadro > .cuadroTexto {
+                    padding: 8px;
+                }
+
+                .gridImagenTexto > .cuadros > .cuadro {
+                    display: grid;
+                    grid-template-columns: 1fr; /* Pasamos a 1 columna en pantallas pequeñas */
+                }
+
+                #mision{
+                    display: none;
+                }
+                .cuadro > .cuadroImagen img {  /* Formato de las imagenes en los cuadros*/
+                    height: auto;
+                    
+                }
+                .gridImagenTexto > .cuadros > .cuadro > .cuadroTexto p {
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                    margin: 4px;
+                }
+                .gridImagenTexto > .cuadros > .cuadro > .cuadroTexto h1 {
+                    font-size: 1.2rem;
+                }
+
+            /* FIN GRID IMAGEN - TEXTO */
+
+            /* INICIO FOOTER */
+                .pie {
+                    height: 70px;
+                }
+
+                .pie > .social {
+                    padding-top: 5px;
+                }
+                .pie > .social a {
+                    font-size: 1.1rem;
+                }
+
+            /* FIN FOOTER */
+
+            /* INICIO HELPERS */
+                .spacer100 {  
+                    height: 50px;
+                    width: 100%
+                }
+                .spacer10 {
+                    height: 5px;
+                }
+            /* FIN HELPERS */
+        
+        /* FIN MEDIA QUERIE COMMON.CSS */
+
+
+        /* INICIO MEDIA QUERIE INDEX.CSS */
+
+            /* BIENVENIDA */
+                .bienvenida {
+                    margin-top: 50px; 
+                    height: auto;
+                    padding: 10px;
+                }
+                .bienvenida > .problema > p{
+                    width: 85%;
+                    font-size: 1rem;
+                    background-color: rgba(0, 0, 0, 0.6);
+                    border-radius: 20px;
+                    line-height: 2.0rem;
+                }
+                .bienvenida > .spacer100 {
+                    height: 0px;
+                }
+                .bienvenida > .comoSolucionarProblema > p{
+                    margin-left: 0px;
+                    padding: 20px;
+                    width: 85%;
+                    font-size: 1rem;
+                    background-color: rgba(0, 0, 0, 0.6);
+                    border-radius: 20px;
+                    line-height: 2rem;
+                }
+            /* FIN BIENVENIDA */
+
+            /*COMO AFRONTAR EL RETO */
+
+                .comoAfrontarReto > .gridImagenTexto > .cuadros > .cuadro > .cuadroTexto {
+                    width: 93%;
+                    height: auto;
+                }
+                .comoAfrontarReto > .gridImagenTexto > .cuadros > .cuadro > .cuadroTexto > h2 {
+                    font-size: 1.2rem;
+                    margin: 0px 0px 20px 0px;
+                }
+
+                .comoAfrontarReto > .gridImagenTexto > .cuadros > .cuadro > .cuadroTexto > p, li{
+                    font-size: 1rem;
+                    line-height: 1.8rem;
+                }
+
+                .comoAfrintarReto > #comoAfrintarReto > li {
+                    font-size: 1rem;
+                }
+            /* FIN COMO AFRONTAR RETO */
+
+            /* SERVICIOS */
+                .servicios{
+                    height: auto;  
+                }
+
+                .servicios > .gruposServicios {
+                    background-color: rgba(210, 210, 210, 0.85);
+                    height: auto;
+                }
+                .servicios> .gruposServicios > .contenedorColumnas {
+                    width: auto;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;   
+                }
+
+            /* FIN SERVICIOS */
+
+        /* FIN MEDIA QUERIE INDEX.CSS */
+
+
+        /* INICIO MEDIA QUERIE SOBREJGG.CSS */
+
+        /* PRESENTACION */
+            .presentacion p {
+                font-size: 0.9rem;
+            }
+
+            .presentacion h1 {
+                font-size: 1.1rem;
+            }
+            #logoNombre {
+                font-size: 0.9rem;
+            }
+
+        /* PROYECTOS */
+            .proyectos {
+                height: auto;
+            }
+
+            .proyectos > h1 {   
+                font-size: 1rem;
+            }
+
+            .slide > .empresa {
+                font-size: 0.8rem;
+            }
+
+            .slide > .proyecto > ul > li {
+                font-size: 0.9rem;
+                line-height: 1.5rem;
+            }
+
+        /* FIN MEDIA QUERIE SOBREJGG.CSS */
+
+
+        /* INICIO MEDIA QUERIE CONTACTO.CSS */
+            body {
+                height: 100%;
+            }
+            .contacto > .slideContacto {
+                width: 90%;
+                height: auto;
+                position: static;
+                margin-left: 5%;
+                grid-template-columns: 1fr;
+            }
+
+            .contacto > .slideContacto > .datosContacto {
+                margin: 0px 20px 10px 20px;
+            }
+
+            .contacto > .slideContacto > .datosContacto > .mail-telefono {
+                justify-content: center;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                font-size: 1rem;
+            }
+            .contacto > .slideContacto > .datosContacto > .vcard img{
+                padding-left: 30%;
+                height: 100px;
+                width: auto;
+            }
+
+            .contacto > .slideContacto > .formulario {
+                margin: 0px 20px 10px 20px;
+            }
+
+            .contacto > .slideContacto > .formulario label {
+                font-size: 0.8rem;
+            }
+
+            .contacto > .slideContacto > .formulario input, select, textarea {
+                width: 100%;
+                padding: 8px;
+                font-size: 0.8rem;
+            }
+
+            .mencionFoto{
+                font-size: 0.5rem;
+            }
+
+            
+        /* FIN MEDIA QUERIE CONTACTO. CSS */
+
+        /* INICIO MEDIA QUERIE MENSAJE.CSS */
+            .mensaje {
+                width: 100%;
+                height: auto;
+            }
+
+            .mensaje > .texto > .ok, .fa-thumbs-up {
+                font-size: 1rem;
+            }    
+
+            .mensaje > .texto > .nook, .fa-times-circle {
+                font-size: 1rem;
+            }
+
+            .mensaje > .texto > a > .fa-whatsapp-square {
+                font-size: 2.5rem;
+            }
+
+
+        /* FIN MEDIA QUERIE MENSAJE.CSS */
+
+    } 
+    /* FIN MEDIA QUERIE PANTALLAS <600 PX */
