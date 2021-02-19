@@ -22,7 +22,6 @@
     
     <!-- Ficheros de estilos -->
     <link rel="stylesheet" href="styles/common.css">
-    <link rel="stylesheet" href="styles/helpers.css">
     <link rel="stylesheet" href="styles/mensaje.css">
     <link rel="stylesheet" href="styles/media-queries.css">
 </head>
@@ -34,6 +33,10 @@
                 Jordi Garcia Gonzalez
             </a>
         </div>
+        <!-- Hay dos cabeceras rerechas porque el formato del menú cambia en función del tamaño
+    de la pantalla. Para pantallas a partir de 1000 px de ancho se ven los nombres en la barra
+    y para inferiores, se ve un botón, que al apretarlo, se desplegan las opciones. -->
+
         <div class="cab-derecha">
             <nav class="menuLinks">
                 <ul>
@@ -51,14 +54,25 @@
                 </ul>
             </nav>
         </div>
+    
+    
         <div class="cab-derechaTelefono">
-            <button class="dropbtn"><i class="bi bi-three-dots-vertical"></i></button>
-            <div class="dropdown-content">
-                <a href="index.html">Inicio</a>
-                <a href="sobrejgg.html">Sobre JGG</a>
-                <a href="servicios.html">Servicios</a>
-                <a href="contacto.html">Contacto</a>
-            </div>
+            <nav class="navigation">
+                <button class="dropbtn"><i class="bi bi-three-dots-vertical"></i></button>
+                <ul class="mainmenu">
+                    <li><a href="index.html" id="index">Inicio</a></li>
+                    <li><a href="sobrejgg.html" id="sobrejgg">Sobre JGG</a></li>
+                    <li><a href="#" id="servicios">Servicios</a>
+                        <ul class="submenu">
+                            <li><a href="procesos.html">Consultoría Operaciones</a></li>
+                            <li><a href="industria40.html">Consultoría Industria 4.0</a></li>
+                            <li><a href="hseq.html">HSEQ / Sistemas de gestión</a></li>
+                            <li><a href="formacion.html">Formación</a></li>
+                        </ul>
+                    </li>
+                    <a href="contacto.html" id="contacto">Contacto</a>
+                </ul>
+            </nav>
         </div>
     </section>
 </header>

@@ -5,10 +5,10 @@
 
 /* Para eliminar el formato de link antes y después de pulsar en el punto de menú 
 con la nota important, esta instrucción tiene preferencia sobre otras */
-a{
-    text-decoration: none !important;
-    color: inherit; 
-}
+    a{
+        text-decoration: none !important;
+        color: inherit; 
+    }
 
 /* INICIO HELPERS */
     .spacer10 {
@@ -24,9 +24,11 @@ a{
         height: 150px;
         width: 100%;
     }
-/* FIN HELPERS */
-/* INICIO CSS CABECERA
-Es la misma en todas las pantallas */
+
+    /* FIN HELPERS */
+
+
+/* INICIO CSS CABECERA. Es la misma en todas las pantallas */
 
     .cabecera{
         height: 60px;
@@ -88,140 +90,114 @@ Es la misma en todas las pantallas */
 	.menuLinks ul li a:hover + ul, .menuLinks ul li ul:hover { 
 		display: block;
 	}
-
-
-   
+  
 /* FIN MENU LINKS ORDENADOR */
 
 /* INICIO MENU LINKS TELEFONO */
-    /* Estilo del botón */
-    .dropbtn {
-        margin-right: 10px;
-        background-color: lightblue;
-        padding: 16px;
-        font-size: 16px;
-        border: none;
-        cursor: pointer;
-        margin-left: 30px;
-    }
-    
-    /* El contenedor <div> necesario para para posicionar el contenido del desplegable */
-    .cab-derechaTelefono {
-        position: relative;
-        display: inline-block;
-    }
-    
-    /* Contenido del desplegable (Oculto inicialmente) */
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        right: 0;
-        background-color: #f9f9f9;
-        min-width: 150px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-    }
-    
-    /* Formato links dentro del desplegable */
-    .dropdown-content a {
-        padding: 12px 16px;
-        display: block;
-        transition: 1s;
-    }
-    
-    /* Cambio de color de los links del desplegable */
-    .dropdown-content a:hover {
-        background-color: lightblue;
-    }
-    
-    /* Mostrar el desplegable del menu */
-    /* .cab-derechaTelefono:hover .dropdown-content, { */
-    .cab-derechaTelefono:hover .mainmenu {
-        display: block;
-        transition: 1s;
-    }
-    
-    /* Cambiar el color de fondo de del botón del desplegable cuando el contenido se muestra */
-    .cab-derechaTelefono:hover .dropbtn {
-        background-color: darkblue;
-        transition: 1s;
-    }
-    .cab-derechaTelefono:hover .bi-three-dots-vertical{
-        color: lightblue;
-        transition: 1s;
-    }
-
     /* define a fixed width for the entire menu */
-.navigation {
-    width: 100px;
-    justify-content: left;
-  }
-  .mainmenu {
-      display: none;
-      position: absolute;
-  }
-  /* reset our lists to remove bullet points and padding */
-   
-  .mainmenu, .submenu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    right: 10;
-    width: 200px;
-  }
+        .navigation {
+            width: 200px;
+        }
+
+    /* Estilo del botón */
+        .dropbtn {
+            margin-right: 10px;
+            background-color: lightblue;
+            padding: 16px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            margin-left: 50%;
+        }
+    
+    /* Eliminar formtos de lista de los elementos del menú y submenú */
+        .mainmenu, .submenu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .mainmenu > li {
+            width: 200px;
+            right: 0;
+        }
+        
+        .submenu > li{
+            width: 250px;
+            left: 0;
+        }
+
+    /* El contenedor <div> necesario para para posicionar el contenido del desplegable */
+        .cab-derechaTelefono {
+            position: relative;
+            display: inline-block;
+        }
+
+    /* Ocultar el contenido del menu si no está pulsado el botón */
+        .mainmenu {
+            display: none;
+            position: absolute;
+        }
+    
+    /* Estado inicial de los submenus. con max-height: 0 se ocultan */ 
+        .submenu {
+            overflow: hidden;
+            max-height: 0;
+            -webkit-transition: all 1s ease-out;
+            transition: all 1s ease-out;
+        }
+    /* Formato de los links dentro del menú y submenú */
+        .mainmenu a {
+            display: block;
+            background-color: #f9f9f9;
+            text-decoration: none;
+            padding: 10px;
+            color: darkblue;
+        }
+        .submenu a {
+            background-color: lightblue;
+          }
+
+        /* Mostrar el desplegable del menu cuando se pulsa el botón */
+        .cab-derechaTelefono:hover .mainmenu {
+            display: block;
+            transition: 1s;
+        }
+    
+        /* Cambiar el color de fondo de del botón del desplegable cuando el contenido se muestra */
+            .cab-derechaTelefono:hover .dropbtn {
+                background-color: darkblue;
+                transition: 1s;
+            }
+            .cab-derechaTelefono:hover .bi-three-dots-vertical{
+                color: lightblue;
+                transition: 1s;
+            }
   
-  /* make ALL links (main and submenu) have padding and background color */
-  .mainmenu a {
-    display: block;
-    background-color: #f9f9f9;
-    text-decoration: none;
-    padding: 10px;
-    color: darkblue;
-  }
+        /* Formato hover links menu */
+            .mainmenu a:hover {
+                background-color: lightblue;
+            }
   
-  /* add hover behaviour */
-  .mainmenu a:hover {
-      background-color: lightblue;
-  }
-  
-  
-  /* when hovering over a .mainmenu item,
-    display the submenu inside it.
-    we're changing the submenu's max-height from 0 to 200px;
-  */
-  
-  .mainmenu li:hover .submenu {
-    display: block;
-    max-height: 500px;
-    right: 0;
-    position: absolute;
-  }
-  
-  /*
-    we now overwrite the background-color for .submenu links only.
-    CSS reads down the page, so code at the bottom will overwrite the code at the top.
-  */
-  
-  .submenu a {
-    background-color: lightblue;
-  }
-  
-  /* hover behaviour for links inside .submenu */
-  .submenu a:hover {
-    background-color: blue;
-    color: whitesmoke;
-  }
-  
-  /* this is the initial state of all submenus.
-    we set it to max-height: 0, and hide the overflowed content.
-  */
-  .submenu {
-    overflow: hidden;
-    max-height: 0;
-    -webkit-transition: all 1s ease-out;
-    transition: all 1s ease-out;
-  }
+        /* Cuando nos situamos encima de un item del menu que tiene un submenu,
+            muestra el contenido del submenu.
+            Cambiamos el max-height: 200px, para que se muestre el contenido. */
+        
+            .mainmenu li:hover .submenu {
+                display: block;
+                max-height: 200px;
+                right: 0;
+                position: absolute;
+            }
+
+        /* Formato hover links submenu */
+            .submenu a:hover {
+                background-color: blue;
+                color: whitesmoke;
+            }
+
 /* FIN MENU LINKS TELEFONO */
+
+
 /* FIN CSS CABECERA COMÚN */
 
 /* INICIO FORMATO GRID IMAGEN - TEXTO */
