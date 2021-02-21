@@ -77,16 +77,14 @@
                 
                 <p>Más del 80% de los profesionales de una empresa están dedicados a la operativa.</p>
                 <p>Las actividades de las operaciones conllevan un gran porcentaje de los costes en cualquier organización, por lo que un porcentaje muy grande de los ingresos de la mayoría de las empresas se destina a la función de operaciones.</p>
-                <p>Las operaciones se relacionan de forma combinada con el resto de las funciones empresariales. Toda organización hace marketing (vende), se financia (contabilidad) y produce (operaciones), y es importante saber cómo funciona la actividad de dirección de operaciones.</p>
                 <p>La correcta gestión de las operaciones permite:</p>
                 <ul>
-                    <li>Mejorar la calidad de servicio adaptando y reduciendo los plazos de entrega más de un 50%</li>
-                    <li>Aumentar la productividad hasta en un 30% de las actividades para tener costes y precios competitivos, y así conseguir una mayor rentabilidad.</li>
+                    <li>Mejorar la calidad de servicio adaptando y reduciendo los plazos de entrega.</li>
+                    <li>Aumentar la productividad de las actividades para tener costes y precios competitivos, y así conseguir una mayor rentabilidad.</li>
                     <li>Adaptar la capacidad de los procesos para atender a la demanda solicitada.</li>
                     <li>Aumentar la flexibilidad en las operaciones para atender cambios solicitados por los clientes.</li>
-                    <li>Innovar de forma continua en la forma de realizar los procesos operativos  y así dar valor a los clientes.</li>
+                    <li>Innovar de forma continua en la forma de realizar los procesos operativos y así dar valor a los clientes.</li>
                 </ul>
-
             </div>
             <div class="imagenIntroduccion">
                 <img src="images/imagenIntroduccionOperaciones.jpg" alt="IntroduccionOperaciones">
@@ -96,17 +94,114 @@
     <div class="spacer150"></div>
     <section class="paqueteServicios">
         <h1>Servicios en Operaciones:</h1>
-        <div class="servicio">
-            <div class="imagen">
-                
+        <div class="tarjetasServicios">
+            <div class="servicio">
+                <div class="imagen">
+                    
+                </div>
+                <div class="titulo">
+                    <h1>Producción</h1>
+                </div>
+                <div class="descripcion">
+                    <!-- Trigger/Open The Modal -->
+                    <button data-modal="myModal" class="boton" id="myBtn">Más Información</button>
+                </div>
             </div>
-            <div class="titulo">
+            <div class="servicio">
+                <div class="imagen">
+                    
+                </div>
+                <div class="titulo">
+                    <h1>Planificación</h1>
+                </div>
+                <div class="descripcion">
+                    <!-- Trigger/Open The Modal -->
+                    <button data-modal="planificacion" class="boton" id="planificacion">Más Información</button>
+                </div>
+            </div>
+            <div class="servicio">
+                <div class="imagen">
+                    
+                </div>
+                <div class="titulo">
 
+                </div>
+                <div class="descripcion">
+                    <!-- Trigger/Open The Modal -->
+                    <button id="myBtn">Open Modal</button>
+                </div>
             </div>
-            <div class="descripcion">
+            <div class="servicio">
+                <div class="imagen">
+                    
+                </div>
+                <div class="titulo">
 
+                </div>
+                <div class="descripcion">
+                    <!-- Trigger/Open The Modal -->
+                    <button id="myBtn">Open Modal</button>
+                </div>
             </div>
+        </div>    
+        <!-- PANTALLAS MODAL CON LA INFORMACIÓN DE LOS SERVICIOS -->
+    
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modalContent">
+                <span><i class="far fa-times-circle"></i></span>
+                <p>Más del 80% de los profesionales de una empresa están dedicados a la operativa.</p>
+                <p>Las actividades de las operaciones conllevan un gran porcentaje de los costes en cualquier organización, por lo que un porcentaje muy grande de los ingresos de la mayoría de las empresas se destina a la función de operaciones.</p>
+                <p>Toda organización hace marketing (vende), se financia (contabilidad) y produce (operaciones), y es importante saber cómo funciona la actividad de dirección de operaciones.</p>
+                <p>La correcta gestión de las operaciones permite:</p>
+                <ul>
+                    <li>Mejorar la calidad de servicio adaptando y reduciendo los plazos de entrega más de un 50%</li>
+                    <li>Aumentar la productividad hasta en un 30% de las actividades para tener costes y precios competitivos, y así conseguir una mayor rentabilidad.</li>
+                    <li>Adaptar la capacidad de los procesos para atender a la demanda solicitada.</li>
+                    <li>Aumentar la flexibilidad en las operaciones para atender cambios solicitados por los clientes.</li>
+                    <li>Innovar de forma continua en la forma de realizar los procesos operativos  y así dar valor a los clientes.</li>
+                </ul>               
+           </div>
+
         </div>
+
+        <div id="planificacion" class="modal">
+            <!-- Modal content -->
+            <div class="modalContent">
+                <span><i class="far fa-times-circle"></i></span>
+                <ul>
+                    <li>Mejorar la calidad de servicio adaptando y reduciendo los plazos de entrega más de un 50%</li>
+                    <li>Aumentar la productividad hasta en un 30% de las actividades para tener costes y precios competitivos, y así conseguir una mayor rentabilidad.</li>
+                    <li>Adaptar la capacidad de los procesos para atender a la demanda solicitada.</li>
+                    <li>Aumentar la flexibilidad en las operaciones para atender cambios solicitados por los clientes.</li>
+                    <li>Innovar de forma continua en la forma de realizar los procesos operativos  y así dar valor a los clientes.</li>
+                </ul>               
+           </div>
+
+        </div>
+       
+        <script>
+            var modal = $('#myModal, #planificacion');
+            var btn = $('#myBtn, #planificacion');
+            var span = document.getElementsByClassName("close")[0];
+
+            $('.boton').click(function(){
+                    var id = $(this).attr('data-modal');
+                $("#"+id).css('display','block');
+            });
+
+            $(".close").click(function(){
+                    $(this).parent().parent().css('display','none');
+            })
+
+            $('span').click(function() {
+                modal.css('display','none');
+            });
+            $(".modal").click(function(event) {
+                    $(this).css('display','none')
+            })
+
+        </script>
     </section>
 
 
