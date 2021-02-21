@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/servicios.css">
     <link rel="stylesheet" href="styles/media-queries.css">
+
+    <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
 </head>
 <header>
     <!-- SRCIPT PARA MANTENER MARCADO EL LINK DE LA PÁGINA EN QUE ESTAMOS -->
@@ -104,7 +106,7 @@
                 </div>
                 <div class="descripcion">
                     <!-- Trigger/Open The Modal -->
-                    <button data-modal="myModal" class="boton" id="myBtn">Más Información</button>
+                    <button data-modal="produccion" class="boton" id="prod">Más Información</button>
                 </div>
             </div>
             <div class="servicio">
@@ -116,7 +118,7 @@
                 </div>
                 <div class="descripcion">
                     <!-- Trigger/Open The Modal -->
-                    <button data-modal="planificacion" class="boton" id="planificacion">Más Información</button>
+                    <button data-modal="planificacion" class="boton" id="plani">Más Información</button>
                 </div>
             </div>
             <div class="servicio">
@@ -146,7 +148,7 @@
         </div>    
         <!-- PANTALLAS MODAL CON LA INFORMACIÓN DE LOS SERVICIOS -->
     
-        <div id="myModal" class="modal">
+        <div id="produccion" class="modal">
             <!-- Modal content -->
             <div class="modalContent">
                 <span><i class="far fa-times-circle"></i></span>
@@ -181,25 +183,25 @@
         </div>
        
         <script>
-            var modal = $('#myModal, #planificacion');
-            var btn = $('#myBtn, #planificacion');
-            var span = document.getElementsByClassName("close")[0];
+            var modal = $('#produccion, #planificacion');
+var btn = $('#prod, #plani');
+var span = document.getElementsByClassName("close")[0];
 
-            $('.boton').click(function(){
-                    var id = $(this).attr('data-modal');
-                $("#"+id).css('display','block');
-            });
+$('.boton').click(function(){
+		var id = $(this).attr('data-modal');
+    $("#"+id).css('display','block');
+});
 
-            $(".close").click(function(){
-                    $(this).parent().parent().css('display','none');
-            })
+$(".close").click(function(){
+		$(this).parent().parent().css('display','none');
+})
 
-            $('span').click(function() {
-                modal.css('display','none');
-            });
-            $(".modal").click(function(event) {
-                    $(this).css('display','none')
-            })
+$('span').click(function() {
+    modal.css('display','none');
+});
+$(".modal").click(function(event) {
+        $(this).css('display','none')
+})
 
         </script>
     </section>
