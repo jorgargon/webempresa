@@ -219,7 +219,7 @@ con la nota important, esta instrucción tiene preferencia sobre otras */
 
     .cuadro > .cuadroImagen img {  /* Formato de las imagenes en los cuadros*/
         width: 100%;
-        height: 500px;
+        height: auto;
         object-fit: cover;
     }
 

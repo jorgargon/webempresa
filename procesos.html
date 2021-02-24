@@ -24,6 +24,7 @@
     <!-- Ficheros de estilos -->
     <link rel="stylesheet" href="styles/common.css">
     <link rel="stylesheet" href="styles/servicios.css">
+    <link rel="stylesheet" href="styles/contacto.css">
     <link rel="stylesheet" href="styles/media-queries.css">
 
     <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
@@ -71,7 +72,7 @@
 <body>
     <section class="introduccion">
         <div class="imagen">
-            <img src="images/consultoriaOperaciones.jpg" alt="Consultoria operaciones" width="100%" height="auto">
+            <img src="images/servicios/procesos/fondoConsultoriaOperaciones.jpg" alt="Consultoria operaciones" width="100%" height="auto">
         </div>
         <div class="tarjetaIntroduccion">
             <div class="textoIntroduccion">
@@ -89,121 +90,470 @@
                 </ul>
             </div>
             <div class="imagenIntroduccion">
-                <img src="images/imagenIntroduccionOperaciones.jpg" alt="IntroduccionOperaciones">
+                <img src="images/servicios/procesos/imagenIntroduccionOperaciones.jpg" alt="IntroduccionOperaciones">
             </div>
         </div>
     </section>
     <div class="spacer150"></div>
     <section class="paqueteServicios">
-        <h1>Servicios en Operaciones:</h1>
         <div class="tarjetasServicios">
             <div class="servicio">
                 <div class="imagen">
-                    
+                    <img src="images/servicios/procesos/operacionesSCM.webp">
+                </div>
+                <div class="titulo">
+                    <h1>Supply Chain Management</h1>
+                </div>
+                <div class="descripcion">
+                    El nivel de servicio y la flexibilidad son dos puntos claves para poder atender las necesidades de los clientes en la actualidad.<br>
+                    <br>
+                    Para hacer frente a esta realidad, se requiere una excelente gestión de la cadena de suministro.
+                </div>
+                <div class="detalleServicios">
+                    <!-- Trigger/Open The Modal -->
+                    <button data-modal="supplyChain" class="boton" id="SCM">Servicios</button>
+                </div>
+            </div>
+
+            <div class="servicio">
+                <div class="imagen">
+                    <img src="images/servicios/procesos/operacionesProduccion.jpg">
                 </div>
                 <div class="titulo">
                     <h1>Producción</h1>
                 </div>
                 <div class="descripcion">
+                    La variabilidad del entorno, las necesidades de los clientes, hace que la complejidad de las organizaciones aumente.<br>
+                    <br>
+                    La gestión de la producción es clave para controlar el impacto en la eficiencia de esta complejidad.
+                    
+                </div>
+                <div class="detalleServicios">
                     <!-- Trigger/Open The Modal -->
-                    <button data-modal="produccion" class="boton" id="prod">Más Información</button>
+                    <button data-modal="produccion" class="boton" id="prod">Servicios</button>
                 </div>
             </div>
             <div class="servicio">
                 <div class="imagen">
-                    
+                    <img src="images/servicios/procesos/operacionesMantenimiento.png">
                 </div>
                 <div class="titulo">
-                    <h1>Planificación</h1>
+                    <h1>Mantenimiento</h1>
                 </div>
                 <div class="descripcion">
-                    <!-- Trigger/Open The Modal -->
-                    <button data-modal="planificacion" class="boton" id="plani">Más Información</button>
-                </div>
-            </div>
-            <div class="servicio">
-                <div class="imagen">
-                    
-                </div>
-                <div class="titulo">
+                    La gestión del mantenimiento no es sólo gestionar las averías y los costes, se trata de gestionar los activos de la empresa para garantizar la disponibilidad de los mismos el mayor tiempo posible.
 
                 </div>
-                <div class="descripcion">
+                <div class="detalleServicios">
                     <!-- Trigger/Open The Modal -->
-                    <button id="myBtn">Open Modal</button>
+                    <button data-modal="mantenimiento" class="boton" id="mto">Servicios</button>
                 </div>
             </div>
             <div class="servicio">
                 <div class="imagen">
-                    
+                    <img src="images/servicios/procesos/operacionesAlmacen.jpg">
                 </div>
                 <div class="titulo">
-
+                    <h1>Almacén</h1>
                 </div>
                 <div class="descripcion">
+                    El almacén es la última área de la empresa que toca el producto antes de la entrega al cliente, por lo que se tiene que considerar la gestión de los almacenes como un punto estratégico dentro de la empresa.<br>
+                    <br>
+                </div>
+                <div class="detalleServicios">
                     <!-- Trigger/Open The Modal -->
-                    <button id="myBtn">Open Modal</button>
+                    <button data-modal="almacen" class="boton" id="alm">Servicios</button>
+                </div>
+            </div>
+            <div class="servicio">
+                <div class="imagen">
+                    <img src="images/servicios/procesos/operacionesLean.jpg">
+                </div>
+                <div class="titulo">
+                    <h1>Lean Manufacturing</h1>
+                </div>
+                <div class="descripcion">
+                    Lean es una metodología para la mejora de los procesos de una organización que se basa en eliminar todas aquellas actividades que no aportan valor al producto.<br>
+                    <br>    
+                    Su implantación ayuda a las empresas a hacer un cambio cultural hacia una organización basada en la mejora continua de sus procesos.
+                </div>
+                <div class="detalleServicios">
+                    <!-- Trigger/Open The Modal -->
+                    <button data-modal="leanManufacturing" class="boton" id="lean">Servicios</button>
                 </div>
             </div>
         </div>    
+
         <!-- PANTALLAS MODAL CON LA INFORMACIÓN DE LOS SERVICIOS -->
     
+        <div id="supplyChain" class="modal">
+            <!-- Modal content -->
+            <div class="modalContent">
+                <span class="close"><i class="bi bi-x"></i></span>
+                <p>Para afrontar los retos ante los que se encuentra la cadena de suministro, se requiere una excelente gestión.</p>
+                <p>Los servicios propuestos por JGG, están pensados para ayudar a la organización a llegar a la Excelencia en la Gestión de la Cadena de suministro.</p>
+                <div class="listaServicios">
+                    <div class="columna">
+                        <ul>
+                            <div class="elementoColumna">
+                                <i class="bi bi-check-circle"></i>
+                                <li>Análisis integral de la SCM</li>
+                            </div>
+                            <div class="elementoColumna">
+                                <i class="bi bi-check-circle"></i>
+                                <li>Proceso de Planificación de la Demanda</li>
+                            </div>
+                            <div class="elementoColumna">
+                                <i class="bi bi-check-circle"></i>
+                                <li>Gestión de compras y aprovisionamiento</li>
+                            </div>
+                            <div class="elementoColumna">
+                                <i class="bi bi-check-circle"></i>
+                                <li>Planificación de producción</li>
+                            </div>
+                            <div class="elementoColumna">
+                                <i class="bi bi-check-circle"></i>
+                                <li>Optimización gestión de stocks e inventarios</li>
+                            </div>
+                            <div class="elementoColumna">
+                                <i class="bi bi-check-circle"></i>
+                                <li>Estrategia de distribución y transporte</li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="columna">
+                        <ul>
+                            <div class="elementoColumna">
+                                <i class="bi bi-check-circle"></i>
+                                <li>Optimización de costes SCM</li>
+                            </div>
+                            <div class="elementoColumna">
+                                <i class="bi bi-check-circle"></i>
+                                <li>Organización de la cadena de suministro</li>
+                            </div>
+                            <div class="elementoColumna">
+                                <i class="bi bi-check-circle"></i>
+                                <li>Formación en SCM</li>
+                            </div>
+                            <div class="elementoColumna">
+                                <i class="bi bi-check-circle"></i>
+                                <li>Planes de contingencia</li>
+                            </div>
+                            <div class="elementoColumna">
+                                <i class="bi bi-check-circle"></i>
+                                <li>Soluciones informáticas</li>
+                            </div>
+                            <div class="elementoColumna">
+                                <i class="bi bi-check-circle"></i>
+                                <li>Cuadro de mandos SCM</li>
+                            </div>
+                        </ul>                
+                    </div>
+                </div>                             
+           </div>
+        </div>
+        
         <div id="produccion" class="modal">
             <!-- Modal content -->
             <div class="modalContent">
-                <span><i class="far fa-times-circle"></i></span>
-                <p>Más del 80% de los profesionales de una empresa están dedicados a la operativa.</p>
-                <p>Las actividades de las operaciones conllevan un gran porcentaje de los costes en cualquier organización, por lo que un porcentaje muy grande de los ingresos de la mayoría de las empresas se destina a la función de operaciones.</p>
-                <p>Toda organización hace marketing (vende), se financia (contabilidad) y produce (operaciones), y es importante saber cómo funciona la actividad de dirección de operaciones.</p>
-                <p>La correcta gestión de las operaciones permite:</p>
-                <ul>
-                    <li>Mejorar la calidad de servicio adaptando y reduciendo los plazos de entrega más de un 50%</li>
-                    <li>Aumentar la productividad hasta en un 30% de las actividades para tener costes y precios competitivos, y así conseguir una mayor rentabilidad.</li>
-                    <li>Adaptar la capacidad de los procesos para atender a la demanda solicitada.</li>
-                    <li>Aumentar la flexibilidad en las operaciones para atender cambios solicitados por los clientes.</li>
-                    <li>Innovar de forma continua en la forma de realizar los procesos operativos  y así dar valor a los clientes.</li>
-                </ul>               
+                <span class="close"><i class="bi bi-x"></i></span>
+                <p>La organización de la producción, tiene que permitirle adaptarse a los cambios de una forma rápida, eficaz y eficiente. 
+                <div class="listaServicios">
+                    <div class="columna">
+                        <ul>
+                            <div class="elementoColumna">
+                                <i class="bi bi-check-circle"></i>
+                                <li>Análisis de la organización de producción</li>
+                            </div>
+                            <div class="elementoColumna">
+                                <i class="bi bi-check-circle"></i>
+                                <li>Layout, reorganización de la planta</li>
+                            </div>
+                            <div class="elementoColumna">
+                                <i class="bi bi-check-circle"></i>
+                                <li>Gestión de flujos en producción</li>
+                            </div>
+                            <div class="elementoColumna">
+                                <i class="bi bi-check-circle"></i>
+                                <li>Planes de productividad y eficacia</li>
+                            </div>
+                            <div class="elementoColumna">
+                                <i class="bi bi-check-circle"></i>
+                                <li>Gestión de costes de producción</li>
+                            </div>
+                            <div class="elementoColumna">
+                                <i class="bi bi-check-circle"></i>
+                                <li>OEE. Eficiencia general de los equipos</li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="columna">
+                        <ul>
+                            <div class="elementoColumna">
+                                <i class="bi bi-check-circle"></i>
+                                <li>Plan estratégico planta de producción</li>
+                            </div>
+                            <div class="elementoColumna">
+                                <i class="bi bi-check-circle"></i>
+                                <li>Proyectos incremento de capacidad de la planta</li>
+                            </div>
+                            <div class="elementoColumna">
+                                <i class="bi bi-check-circle"></i>
+                                <li>Mejora continua en producción</li>
+                            </div>
+                            <div class="elementoColumna">
+                                <i class="bi bi-check-circle"></i>
+                                <li>Integración de la Seguridad y Salud en producción</li>
+                            </div>
+                            <div class="elementoColumna">
+                                <i class="bi bi-check-circle"></i>
+                                <li>Formación Gestión Producción.</li>
+                            </div>
+                            <div class="elementoColumna">
+                                <i class="bi bi-check-circle"></i>
+                                <li>Cuadro de mandos producción</li>
+                            </div>
+                        </ul>        
+                    </div>
+                </div>                             
            </div>
-
         </div>
 
-        <div id="planificacion" class="modal">
+        <div id="mantenimiento" class="modal">
             <!-- Modal content -->
             <div class="modalContent">
-                <span><i class="far fa-times-circle"></i></span>
-                <ul>
-                    <li>Mejorar la calidad de servicio adaptando y reduciendo los plazos de entrega más de un 50%</li>
-                    <li>Aumentar la productividad hasta en un 30% de las actividades para tener costes y precios competitivos, y así conseguir una mayor rentabilidad.</li>
-                    <li>Adaptar la capacidad de los procesos para atender a la demanda solicitada.</li>
-                    <li>Aumentar la flexibilidad en las operaciones para atender cambios solicitados por los clientes.</li>
-                    <li>Innovar de forma continua en la forma de realizar los procesos operativos  y así dar valor a los clientes.</li>
-                </ul>               
-           </div>
-
+                <span class="close"><i class="bi bi-x"></i></span>
+                <p>El objetivo del mantenimiento es asegurar la disponibilidad y confiabilidad prevista de las operaciones con respecto de la función deseada, dando cumplimiento además a todos los requisitos del sistema de gestión de calidad, así como con las normas de seguridad y medio ambiente, buscado el máximo beneficio global.</p>
+                <div class="listaServicios">
+                    <div class="columna">
+                        <ul>
+                            <div class="elementoColumna">
+                                <i class="bi bi-check-circle"></i>
+                                <li>Análisis Servicio de Mantenimiento</li>
+                            </div>
+                            <div class="elementoColumna">
+                                <i class="bi bi-check-circle"></i>
+                                <li>Gestión y optimización de costes mantenimiento</li>
+                            </div>
+                            <div class="elementoColumna">
+                                <i class="bi bi-check-circle"></i>
+                                <li>Planes de mantenimiento (Preventivo -> Predictivo)</li>
+                            </div>
+                            <div class="elementoColumna">
+                                <i class="bi bi-check-circle"></i>
+                                <li>Eficiencia en mantenimiento</li>
+                            </div>
+                            <div class="elementoColumna">
+                                <i class="bi bi-check-circle"></i>
+                                <li>TPM</li>
+                            </div>
+                            <div class="elementoColumna">
+                                <i class="bi bi-check-circle"></i>
+                                <li>Gestión de recambios</li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="columna">
+                        <ul>
+                            <div class="elementoColumna">
+                                <i class="bi bi-check-circle"></i>
+                                <li>Mejora continua en mantenimiento</li>
+                            </div>
+                            <div class="elementoColumna">
+                                <i class="bi bi-check-circle"></i>
+                                <li>Evaluación, selección y homologación de contratistas</li>
+                            </div>
+                            <div class="elementoColumna">
+                                <i class="bi bi-check-circle"></i>
+                                <li>GMAO. Gestión del Mantenimiento Asistido por Ordenador</li>
+                            </div>
+                            <div class="elementoColumna">
+                                <i class="bi bi-check-circle"></i>
+                                <li>Integración de la Seguridad y Salud en Mantenimiento</li>
+                            </div>
+                            <div class="elementoColumna">
+                                <i class="bi bi-check-circle"></i>
+                                <li>Cuadro de mandos de mantenimiento</li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>                      
+            </div>
         </div>
-       
+
+        <div id="almacen" class="modal">
+            <!-- Modal content -->
+            <div class="modalContent">
+                <span class="close"><i class="bi bi-x"></i></span>
+                <p>Cuando una compañía afronta el reto de diseñar un modelo global de gestión y operación logística lo ha de hacer con un objetivo doble: el aseguramiento del máximo nivel de servicio al cliente y la minimización del coste asociado.</p>
+                <p>Estos dos condicionantes, en muchas ocasiones, son difíciles de compatibilizar si se consideran desde la perspectiva típica de una empresa con una historia por detrás, y por lo tanto, con una sistemática ya adquirida de operación, con un esquema organizativo definido y con unos medios determinados, y en la que sus máximos responsables en el ámbito de las operaciones suelen estar sumidos en la problemática del día a día, sin tiempo para afrontar una reingeniería global de su logística.</p>
+                <div class="listaServicios">
+                    <div class="columna">
+                        <ul>
+                            <div class="elementoColumna">
+                                <i class="bi bi-check-circle"></i>
+                                <li>Análisis organización almacén</li>
+                            </div>
+                            <div class="elementoColumna">
+                                <i class="bi bi-check-circle"></i>
+                                <li>Diseño y operativa</li>
+                            </div>
+                            <div class="elementoColumna">
+                                <i class="bi bi-check-circle"></i>
+                                <li>Flujos internos del almacén</li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="columna">
+                        <ul>
+                            <div class="elementoColumna">
+                                <i class="bi bi-check-circle"></i>
+                                <li>Productividad y eficiencia del almacén</li>
+                            </div>
+                            <div class="elementoColumna">
+                                <i class="bi bi-check-circle"></i>
+                                <li>Soluciones informáticas</li>
+                            </div>
+                            <div class="elementoColumna">
+                                <i class="bi bi-check-circle"></i>
+                                <li>Cuadro de mandos del Almacén</li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>                      
+            </div>
+        </div>
+
+        <div id="leanManufacturing" class="modal">
+            <!-- Modal content -->
+            <div class="modalContent">
+                <span class="close"><i class="bi bi-x"></i></span>
+                <p>El Lean Manufacturing se centra en eliminar los desperdicios y operaciones que no añaden valor a nuestros procesos.</p>
+                <p>Un Modelo de Gestión Lean, no es sólo un conjunto de Técnicas que pueden aplicarse de forma independiente, la clave del éxito es desarrollar correctamente la Estructura Organizativa Lean como la base de la Mejora Continua.</p>
+                <div class="listaServicios">
+                    <div class="columna">
+                        <ul>
+                            <div class="elementoColumna">
+                                <i class="bi bi-check-circle"></i>
+                                <li>Mejora de procesos</li>
+                            </div>
+                            <div class="elementoColumna">
+                                <i class="bi bi-check-circle"></i>
+                                <li>Gestión del cambio</li>
+                            </div>
+                            <div class="elementoColumna">
+                                <i class="bi bi-check-circle"></i>
+                                <li>Implantación herramientas lean: 5S / PDCA / Visual Management</li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="columna">
+                        <ul>
+                            <div class="elementoColumna">
+                                <i class="bi bi-check-circle"></i>
+                                <li>Sensibilización / Formación equipos de trabajo</li>
+                            </div>
+                            <div class="elementoColumna">
+                                <i class="bi bi-check-circle"></i>
+                                <li>Equipos de mejora</li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>                      
+            </div>
+        </div>
+        <!-- SCRIPT PARA EL CONTROL DE LOS MODALS DE LA PÁGINA ESTÁ EN JQUERY 3.2, 
+            NECESITA INICIALIZARLO EN <HEAD> CON EL SIGUIENTE LINK 
+            <script type="text/javascript" src="jquery-3.5.1.min.js"></script> -->
         <script>
-            var modal = $('#produccion, #planificacion');
-var btn = $('#prod, #plani');
-var span = document.getElementsByClassName("close")[0];
+            var modal = $('#supplyChain, #produccion, #mantenimiento, #almacen, #leanManufacturing');
+            var btn = $('#SCM, #prod, #mto, #alm, #lean');
+            var span = document.getElementsByClassName("close")[0];
 
-$('.boton').click(function(){
-		var id = $(this).attr('data-modal');
-    $("#"+id).css('display','block');
-});
+            $('.boton').click(function(){
+                var id = $(this).attr('data-modal');
+                $("#"+id).fadeIn(1000);
+                return false;
+            });
 
-$(".close").click(function(){
-		$(this).parent().parent().css('display','none');
-})
+            $(".close").click(function(){
+                    $(this).parent().parent().css('display','none');
+            })
 
-$('span').click(function() {
-    modal.css('display','none');
-});
-$(".modal").click(function(event) {
-        $(this).css('display','none')
-})
+            $('span').click(function() {
+                modal.css('display','none');
+            });
+            $(".modal").click(function(event) {
+                    $(this).css('display','none')
+            })
 
         </script>
+    </section>
+    <section class="contacto">
+        <div class="slideContacto">
+            <div class="datosContacto">
+                <h1>¿Hablamos?</h1>
+                <p>Si tienes alguna pregunta, comentario, ... envíame un mensaje 
+                    o rellena el formulario y buscamos un momento para comentarlo.</p>
+                <div class="mail-telefono">
+                    <i class="far fa-envelope"></i>
+                    <a href="mailto:jorgargon@outlook.com"> <p>jorgargon@outlook.com</p></a>
+                </div>
+                <div class="mail-telefono">
+                    <i class="fas fa-phone-volume"></i>
+                    <p>+34 676 460 703</p>
+                </div>
+                <div class="vcard">
+                    <p>Lee o pincha en este código QR para acceder a mi tarjeta de visita.</p>
+                    <a href="archivos/Jordi Garcia.vcf" alt="linkTarjetaVisita">
+                        <img src="images/qrvcard.png" alt="qrTarjetaVisita" height="150px" width="150px">
+                    </a>
+                </div>
+            </div>
+            <form action="enviarMail.php" method="post" class="formulario">
+                <div class="elem-group">
+                    <label for="nombre">Nombre<sup>*</sup></label>
+                    <input type="text" id="nombre" name="nombreContacto" 
+                    placeholder="Nombre y Apellido" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Nombre y Apellido'" pattern=[A-Z\sa-z]{3,20} required>
+                </div>
+                <div class="elem-group">
+                    <label for="empresa">Empresa<sup>*</sup></label>
+                    <input type="text" id="empresa" name="empresaContacto" 
+                    placeholder="¿Dónde trabajas?" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = '¿Dónde trabajas?'"required>
+                    </div>
+                <div class="elem-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="text" id="telefono" name="telefonoContacto" 
+                    placeholder="Número de teléfono" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Número de teléfono'">
+                </div>
+                <div class="elem-group">
+                    <label for="email">Correo Electrónico<sup>*</sup></label>
+                    <input type="email" id="email" name="mailContacto" 
+                    placeholder="ejemplo@email.com" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'ejemplo@email.com'"required>
+                </div>
+                <div class="elem-group">
+                    <label for="asunto">Asunto<sup>*</sup></label>
+                    <input type="text" id="asunto" name="asuntoMensaje" required 
+                    placeholder="Motivo del contacto" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Motivo del contacto'"pattern=[A-Za-z0-9\s]{8,60}>
+                </div>
+                <div class="elem-group">
+                    <label for="mensaje">Mensaje*</label>
+                    <textarea id="mensaje" name="mensajeContacto" 
+                    placeholder="Detalles de la consulta" onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Detalles de la consulta'"required></textarea>
+                </div>
+                <div class="paqueteBoton">
+                    <button type="submit">Enviar</button>
+                    <p>* Campos obligatorios</p>
+                </div>
+                
+            </form>
+        </div>
     </section>
 
 
@@ -214,7 +564,7 @@ $(".modal").click(function(event) {
             (function () {
                 var options = {
                     whatsapp: "+34676460703", // WhatsApp number
-                    call_to_action: "Contacta", // Call to action
+                    call_to_action: "", // Call to action
                     position: "right", // Position may be 'right' or 'left'
                 };
                 var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;

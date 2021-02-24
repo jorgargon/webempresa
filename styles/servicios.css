@@ -52,12 +52,14 @@
 
 /* INICIO TARJETAS SERVICIOS */
     .paqueteServicios {
-        width: 80%;
+        
+        background-color: rgb(235, 235, 235);
+        width: 76%;
         margin-left: 10%;
         -webkit-box-shadow: 7px 3px 84px 10px rgba(0,0,0,0.57);
         -moz-box-shadow: 7px 3px 84px 10px rgba(0,0,0,0.57);
         box-shadow: 7px 3px 84px 10px rgba(0,0,0,0.57);
-        padding: 50px;
+        padding: 30px;
     }
 
     .paqueteServicios > .tarjetasServicios {
@@ -68,12 +70,78 @@
     }
 
     .paqueteServicios > .tarjetasServicios > .servicio {
-        height: 300px;
+        height: 600px;
         -webkit-box-shadow: 7px 3px 23px -16px rgba(0,0,0,0.57);
         -moz-box-shadow: 7px 3px 23px -16px rgba(0,0,0,0.57);
         box-shadow: 7px 3px 23px -16px rgba(0,0,0,0.57);
     }
 
+    .paqueteServicios > .tarjetasServicios > .servicio > .imagen {
+        width: 100%;
+        height: 230px;
+    }
+    
+    .paqueteServicios > .tarjetasServicios > .servicio > .imagen img {
+        width: 100%;
+        height: 230px;
+        object-fit: cover;
+    }
+
+    .paqueteServicios > .tarjetasServicios > .servicio > .titulo {
+        height: 60px;
+        background-color: darkblue;
+        text-align: center;
+    }
+
+    .paqueteServicios > .tarjetasServicios > .servicio > .titulo h1{
+        margin: 0px;
+        padding: 13px 0px 0px 0px;
+        color: whitesmoke;
+    }
+
+    .paqueteServicios > .tarjetasServicios > .servicio > .descripcion {
+        height: 220px;
+        padding: 10px;
+        background-color: whitesmoke;
+        font-size: 1.2rem;
+    }
+
+    .paqueteServicios > .tarjetasServicios > .servicio > .detalleServicios {
+        height: 50px;
+        padding: 10px 20% 10px 20%;
+        background-color: whitesmoke;
+        
+    }
+
+    .paqueteServicios > .tarjetasServicios > .servicio > .detalleServicios > .boton {
+        height: 50px;
+        width: 200px;
+        background-color: darkblue;
+        color: whitesmoke;
+        font-size: 1.2rem;
+    }
+
+    .modal > .modalContent > .listaServicios {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+
+    .modal > .modalContent > .listaServicios > .columna .elementoColumna {
+        display: flex;
+        
+    }
+    
+    .modal > .modalContent > .listaServicios > .columna li {
+        padding-bottom: 10px;
+        list-style: none;
+
+    }
+
+    .modal > .modalContent > .listaServicios > .columna i {
+        padding-right: 10px;
+        
+    }
 /* FIN TARJETAS SERVICIOS */
 
 /* INICIO PANTALLA EMERGENTE CON EL CONTENIDO DE LOS SERVICIOS */
@@ -90,27 +158,32 @@
         overflow: auto;
         background-color: rgb(0,0,0); 
         background-color: rgba(0,0,0,0.4);
-        -webkit-transition: opacity 400ms ease-in;
-        -moz-transition: opacity 400ms ease-in;
-        transition: opacity 400ms ease-in;}
+        -webkit-transition: opacity 1s ease-in;
+        -moz-transition: opacity 1s ease-in;
+        transition: opacity  ease-in 10s;
+    }
 
     /* Modal Content */
-    .modal-content {background-color: #fefefe;
+    .modalContent {
+        background-color: #fefefe;
         margin: auto;
         padding: 20px;
         border: 1px solid #888;
-        width: 80%;}
+        width: 80%;
+        transition: ease-in 10s;
+    }
 
     /* The Close Button */
-    .close > .far {
+    .close > .bi {
         color: #aaa;
         float: right;
-        font-size: 28px;
+        font-size: 50px;
         font-weight: bold;
+        transition: 1s;
     }
-    .close:hover,
-    .close:focus {
-        color: #000;
+    .close > .bi:hover,
+    .close > .bi:focus {
+        color: darkblue;
         text-decoration: none;
         cursor: pointer;}
 
